@@ -1,8 +1,8 @@
 name: works-of-agnes-martin
 
 executables:
-  generate:
-    main: Generate.hs
+  HappyHoliday:
+    main: HappyHoliday.hs
     source-dirs:
       - src
     dependencies:
