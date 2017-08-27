@@ -1,0 +1,11 @@
+name: works-of-agnes-martin
+
+executables:
+  generate:
+    main: Generate.hs
+    source-dirs:
+      - src
+    dependencies:
+      - base
+      - diagrams-lib
+      - diagrams-svg
