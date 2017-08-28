@@ -1,10 +1,13 @@
-all: happy-holiday.svg
+all: HappyHoliday.svg Untitled1977.svg
 
-happy-holiday.svg: dist/HappyHoliday
-	./dist/HappyHoliday --output HappyHoliday.svg -w 400 -h 400
+%.svg: dist/%
+	./dist/$(basename $@) --output $@ -w 400 -h 400
 	@echo generated HappyHoliday.svg
 
-dist/HappyHoliday: src/HappyHoliday.hs
+dist/%: src/%.hs
 	stack install --local-bin-path dist
 
-	# src/HappyHoliday.hs
+clean: .phony
+	rm -rf dist *.svg
+
+.phony:
