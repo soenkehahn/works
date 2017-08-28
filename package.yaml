@@ -13,3 +13,6 @@ executables:
 
   Untitled1977:
     main: Untitled1977.hs
+
+  Untitled5:
+    main: Untitled5.hs

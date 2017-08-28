@@ -1,4 +1,4 @@
-all: HappyHoliday.svg Untitled1977.svg
+all: HappyHoliday.svg Untitled1977.svg Untitled5.svg
 
 %.svg: dist/%
 	./dist/$(basename $@) --output $@ -w 400 -h 400
